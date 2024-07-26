@@ -1,40 +1,34 @@
-"use client";
-
-import React from "react";
 import Link from "next/link";
-import { useSelectedLayoutSegment } from "next/navigation";
-import { cn } from "@/lib/utils";
-import useScroll from "@/hooks/use-scroll";
+import React from "react";
+import ResponsivePopover from "./responsivePopover";
 
 const Header = () => {
-  const scrolled = useScroll(5);
-  const selectedLayout = useSelectedLayoutSegment();
-
   return (
-    <div
-      className={cn(
-        "sticky top-0 z-30 p-3 h-auto bg-white w-full inset-x-0 border-b border-gray-400",
-        {
-          "border-b border-gray-400 bg-white/75 backdrop-blur-lg": scrolled,
-          "border-b border-gray-400 bg-white": selectedLayout,
-        }
-      )}
-    >
-      
-      <div className="flex h-[40px] items-center justify-between px-5">
-        {/* logo img */}
-        <div className="flex items-center space-x-2">
-          <Link href="/" className="flex items-center space-x-2 md:hidden">
-            <span className="h-7 w-7 bg-zinc-300 rounded lg"></span>
-            <span className="text-xl font-bold flex">Logo</span>
+    <div className="mx-auto flex justify-center items-center border-b2 px-6 py-2 h-24">
+      <h1 className="font-bold">Software Developer</h1>
+      <div className="grow">
+        <div className="hidden sm:flex items-center gap-10 justify-center">
+          <Link href="/">
+            <p>Overview</p>
+          </Link>
+          <Link href="/skills">
+            <p>Skills</p>
+          </Link>
+          <Link href="/career">
+            <p>Career</p>
+          </Link>
+          <Link href="/contact">
+            <p>Contact</p>
           </Link>
         </div>
-        {/* account img */}
-        <div className="hidden md:block">
-          <div className="h-12 w-12 rounded-full bg-zinc-300 flex items-center justify-center">
-            <span className="font-bold text-sm ">AP</span>
-          </div>
-        </div>
+      </div>
+      <div className="sm:hidden">
+        <ResponsivePopover/>
+      </div>
+      <div>
+        <button className="text-white bg-black rounded-lg py-2 px-6 hidden sm:block">
+          Sign Up
+        </button>
       </div>
     </div>
   );

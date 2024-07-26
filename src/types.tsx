@@ -5,3 +5,8 @@ export type SideNavItem = {
     subMenu?: boolean,
     subMenuItems?: SideNavItem[]
 }
+
+export type MenuItemWithSubMenuProps = {
+    item: SideNavItem,
+    toggleOpen: () => void
+}
