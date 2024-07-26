@@ -11,9 +11,13 @@
   "dependencies": {
     "@clerk/nextjs": "^5.2.5",
     "@clerk/themes": "^2.1.13",
+    "@iconify/react": "^5.0.2",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.3.17",
     "next": "14.2.5",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "tailwind-merge": "^2.4.0"
   },
   "devDependencies": {
     "@types/node": "^20",
