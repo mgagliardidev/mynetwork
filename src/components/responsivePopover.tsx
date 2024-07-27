@@ -22,6 +22,7 @@ export default function ResponsivePopover() {
             <PopOverListLink path="/overview" text="Overview" />
             <PopOverListLink path="/skills" text="Skills" />
             <PopOverListLink path="/career" text="Career" />
+            <PopOverListLink path="/projects" text="Projects" />
             <PopOverListLink path="/contact" text="Contact" />
             <PopOverListButton />
           </ul>

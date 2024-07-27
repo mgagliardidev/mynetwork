@@ -5,13 +5,14 @@ import HoverHighlightParagraph from "./hoverHighlightParagraph";
 
 const Header = () => {
   return (
-    <div className="mx-auto flex justify-center items-center border border-gray-400 px-6 py-2 h-20">
+    <div className="mx-auto flex justify-center items-center border-b border-gray-400 px-6 py-2 h-20">
       <h1 className="font-bold">Software Developer</h1>
       <div className="grow">
         <div className="hidden sm:flex items-center gap-10 justify-center">
           <HoverHighlightParagraph path="/overview" text="Overview" />
           <HoverHighlightParagraph path="/skills" text="Skills" />
           <HoverHighlightParagraph path="/career" text="Career" />
+          <HoverHighlightParagraph path="/projects" text="Projects" />
           <HoverHighlightParagraph path="/contact" text="Contact" />
         </div>
       </div>
