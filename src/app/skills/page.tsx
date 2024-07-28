@@ -11,7 +11,7 @@ const Skills = () => {
 
       <SkillParagraph
         title="Backend"
-        skills={["NodeJS", "Next.js", "React", "Flutter"]}
+        skills={["NodeJS", "Next.js", "React", "Flutter", "ExpressJS"]}
       />
 
       <SkillParagraph
