@@ -4,8 +4,10 @@ import { Menu as MenuIcon, X as XIcon } from "lucide-react";
 import PopOverListLink from "@/components/popOverListLink";
 import Link from "next/link";
 import PopOverListButton from "./popOverListButton";
+import {headerMenuItems} from "../constants";
 
 export default function ResponsivePopover() {
+  const menuItems = headerMenuItems;
   return (
     <Popover v-slot="{ open }">
       <PopoverButton className="text-gray-700 p-2 rounded-md">
@@ -19,11 +21,9 @@ export default function ResponsivePopover() {
         </div>
         <div className="h-full mt-32 justify-items-center">
           <ul>
-            <PopOverListLink path="/" text="Overview" />
-            <PopOverListLink path="/skills" text="Skills" />
-            <PopOverListLink path="/career" text="Career" />
-            <PopOverListLink path="/projects" text="Projects" />
-            <PopOverListLink path="/contact" text="Contact" />
+            {menuItems.map((item, index) => (
+              <PopOverListLink key={index} path={item.href} text={item.name} />
+            ))}
             <PopOverListButton />
           </ul>
         </div>

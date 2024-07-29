@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
 import Header from "@/components/header";
+import { BrowserRouter } from "react-router-dom";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,8 +20,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-          <Header />
-          <div className='mx-20 mt-6 mb-10 font-roboto max-sm:mx-6'>{children}</div>
+        <Header />
+        <div className="mx-20 mt-6 mb-10 font-roboto max-sm:mx-6">
+          {children}
+        </div>
       </body>
     </html>
   );

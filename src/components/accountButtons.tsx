@@ -67,7 +67,7 @@ const handleDownload = () => {
 
 const sendMailTo = () => {
     const link = document.createElement("a");
-    link.href = "mailto:example@example.com";
+    link.href = "mailto:mgagliardidev@gmail.com?";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
