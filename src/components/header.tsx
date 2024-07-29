@@ -9,7 +9,7 @@ const Header = () => {
       <h1 className="font-bold">Software Developer</h1>
       <div className="grow">
         <div className="hidden sm:flex items-center gap-10 justify-center">
-          <HoverHighlightParagraph path="/overview" text="Overview" />
+          <HoverHighlightParagraph path="/" text="Overview" />
           <HoverHighlightParagraph path="/skills" text="Skills" />
           <HoverHighlightParagraph path="/career" text="Career" />
           <HoverHighlightParagraph path="/projects" text="Projects" />
