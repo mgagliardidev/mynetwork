@@ -2,8 +2,6 @@
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react";
 import { Menu as MenuIcon, X as XIcon } from "lucide-react";
 import PopOverListLink from "@/components/popOverListLink";
-import Link from "next/link";
-import PopOverListButton from "./popOverListButton";
 import {headerMenuItems} from "../constants";
 
 export default function ResponsivePopover() {
@@ -24,7 +22,6 @@ export default function ResponsivePopover() {
             {menuItems.map((item, index) => (
               <PopOverListLink key={index} path={item.href} text={item.name} />
             ))}
-            <PopOverListButton />
           </ul>
         </div>
       </PopoverPanel>

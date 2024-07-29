@@ -36,20 +36,15 @@ const Header = () => {
               text={item.name}
             />
           ))}
-          {/* <HoverHighlightParagraph path="/" text="Overview" />
-          <HoverHighlightParagraph path="/skills" text="Skills" />
-          <HoverHighlightParagraph path="/career" text="Career" />
-          <HoverHighlightParagraph path="/projects" text="Projects" />
-          <HoverHighlightParagraph path="/contact" text="Contact" /> */}
         </div>
       </div>
       <div className="sm:hidden">
         <ResponsivePopover />
       </div>
       <div>
-        <button className="text-white bg-black rounded-lg py-2 px-6 hidden sm:block">
+        {/* <button className="text-white bg-black rounded-lg py-2 px-6 hidden sm:block">
           Sign Up
-        </button>
+        </button> */}
       </div>
     </div>
   );
