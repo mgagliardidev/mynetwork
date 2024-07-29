@@ -19,7 +19,7 @@ export default function ResponsivePopover() {
         </div>
         <div className="h-full mt-32 justify-items-center">
           <ul>
-            <PopOverListLink path="/overview" text="Overview" />
+            <PopOverListLink path="/" text="Overview" />
             <PopOverListLink path="/skills" text="Skills" />
             <PopOverListLink path="/career" text="Career" />
             <PopOverListLink path="/projects" text="Projects" />
