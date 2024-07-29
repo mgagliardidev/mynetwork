@@ -14,7 +14,7 @@ const GitHubProjectCard: React.FC<GitHubProjectCardProps> = ({
       href={repoLink}
       target="_blank"
       rel="noopener noreferrer"
-      className="block max-w-2xl mx-auto bg-white border border-gray-300 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300"
+      className="block max-w-2xl mx-1 bg-white border border-gray-300 shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex-shrink-0 min-w-full"
     >
       <div className="p-8">
         <div className="flex flex-row justify-between">
