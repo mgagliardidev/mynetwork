@@ -1,5 +1,5 @@
 import React from 'react';
-import { CareerCardProps } from '@/types/CareerCardProps';
+import { CareerCardProps } from '@/types/careerCardProps';
 
 
 const CareerCard: React.FC<CareerCardProps> = ({ companyName, roleName, startDate, endDate, description, skills }) => {
