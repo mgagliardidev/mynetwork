@@ -58,7 +58,7 @@ const redirectToLink = (url: string) => {
 
 const handleDownload = () => {
   const link = document.createElement("a");
-  link.href = "/assets/resumes/resume.pdf";
+  link.href = "/assets/resumes/matteo_gagliardi_resume.pdf";
   link.download = "resume.pdf";
   document.body.appendChild(link);
   link.click();
@@ -67,7 +67,7 @@ const handleDownload = () => {
 
 const sendMailTo = () => {
     const link = document.createElement("a");
-    link.href = "mailto:mgagliardidev@gmail.com?";
+    link.href = "mailto:matteogagliardi7599@gmail.com?";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

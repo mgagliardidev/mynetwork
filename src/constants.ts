@@ -12,7 +12,7 @@ export const projectsItems: GitHubProjectCardProps[] = [
     {
         projectName: "MyNetwork Site",
         technologies: ["NextJS", "Tailwind", "TypeScript", "ReactJS", "Vercel"],
-        description: "Personal website with NextJS and Tailwind. Uses Vercel for hosting.",
+        description: "Personal website with React, TypeScript and Tailwind and NextJS as backend. Uses Vercel for hosting.",
         repoLink: "https://github.com/mgagliardidev/mynetwork",
     },
     {
