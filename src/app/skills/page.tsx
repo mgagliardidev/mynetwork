@@ -1,4 +1,5 @@
 import SkillParagraph from "@/components/skillsParagraph";
+import {skillsList} from "../../constants";
 import React from "react";
 
 const Skills = () => {
@@ -6,35 +7,27 @@ const Skills = () => {
     <div className="flex flex-col gap-6">
       <SkillParagraph
         title="Frontend"
-        skills={["Html/CSS", "TailwindCSS", "Mobile UI"]}
+        skills={skillsList.frontend}
       />
 
       <SkillParagraph
-        title="Backend"
-        skills={["NodeJS", "Next.js", "React", "Flutter", "ExpressJS"]}
+        title="Frameworks"
+        skills={skillsList.frameWorks}
       />
 
       <SkillParagraph
         title="Programming Languages"
-        skills={[
-          "JavaScript",
-          "TypeScript",
-          "Python",
-          "C",
-          "C++",
-          "C#",
-          "Java",
-        ]}
+        skills={skillsList.languages}
       />
 
       <SkillParagraph
         title="Database"
-        skills={["SQL", "MongoDB", "Firebase", "PostgreSQL"]}
+        skills={skillsList.database}
       />
 
       <SkillParagraph
         title="Versioning"
-        skills={["Git", "GitHub", "GitLab", "Azure DevOps", "CI/CD"]}
+        skills={skillsList.versioning}
       />
     </div>
   );

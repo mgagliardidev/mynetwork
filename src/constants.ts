@@ -1,5 +1,29 @@
 import { GitHubProjectCardProps } from "@/types/githubProjectCardProps"
 
+export const skillsList = {
+    frontend: [
+        "Html/CSS", "TailwindCSS", "Mobile UI"
+    ],
+    frameWorks: [
+        "NodeJS", "Next.js", "React", "Flutter", "ExpressJS"
+    ],
+    languages: [
+        "JavaScript",
+          "TypeScript",
+          "Python",
+          "C",
+          "C++",
+          "C#",
+          "Java",
+    ],
+    database: [
+        "SQL", "MongoDB", "Firebase", "PostgreSQL",
+    ],
+    versioning: [
+        "Git", "GitHub", "GitLab", "Azure DevOps", "CI/CD"
+    ]
+}
+
 export const headerMenuItems = [
     { name: "Overview", href: "/" },
     { name: "Skills", href: "/skills" },
