@@ -40,9 +40,9 @@ export const projectsItems: GitHubProjectCardProps[] = [
         repoLink: "https://github.com/mgagliardidev/mynetwork",
     },
     {
-        projectName: "Store APP - in progress",
+        projectName: "Store APP",
         technologies: ["Flutter", "Supabase", "PostgresSQL", "Dart", "Riverpod (state managment)"],
-        description: "E-commerce application for generic purposes. Written in Dart using Flutter, all products listed inside the app are stored in Supabase.",
+        description: "Full stack E-commerce application for generic purposes. Written in Dart using Flutter, all products listed inside the app are stored in Supabase.",
         repoLink: "https://github.com/mgagliardidev/store_app",
     },
     {
